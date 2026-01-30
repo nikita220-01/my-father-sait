@@ -6,54 +6,84 @@
     <!-- Подключаем Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
+        /* Кнопки-перейти */
         .g{
-  display: inline-flex;
-     align-items: center;
-     justify-content: center;
-     width: 140px;
-     height: 60px;
-     background-color: blue;
-     color: white;
-     text-decoration: none;
-     font-size: 20px;
-     border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 140px;
+            height: 60px;
+            background-color: #0d6efd;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: transform .15s ease, box-shadow .15s ease;
+        }
+        .g:hover{
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(13,110,253,.18);
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* Хедер / навигация */
+        .navbar-brand img {
+            height: 48px;
+            width: 48px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-right: 10px;
+        }
+        .navbar {
+            box-shadow: 0 2px 8px rgba(0,0,0,.08);
+        }
+        .nav-link {
+            font-weight: 600;
+            text-transform: lowercase;
+            letter-spacing: .2px;
+        }
+        @media (max-width: 767px) {
+            .g { width: 120px; height: 48px; font-size: 16px; }
         }
     </style>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container=fluid h1">
-        <a class="navbar-brand d-flex align-items-center" href="navbarNav">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="https://avatars.mds.yandex.net/get-sprav-products/3912342/2a0000019218cfebb326ebbb3924b81cb444/XXL" alt="logo">
+            <span class="h5 mb-0">Пашмеб</span>
         </a>
-        <!--<button class="navbar-tonger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-tolger-icon">-->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <div class="container">
-                    <div class="row">
-                        <li class="mav item">
-                            <a class="nav-link" href="#home">главная</a>
-                        </li>
-                        <li class="mav item">
-                            <a class="nav-link" href="#portfolio">категории</a>
-                        </li>
-                        <li class="nav item">
-                            <a class="nav-link" href="#skills">наши работы</a>
-                        </li>
-                        <li class="nav item">
-                            <a class="nav-link" href="#contact">заказ</a>
-                        </li>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                        </li>
-                    </div>
-                </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto align-items-lg-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">категории</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">наши работы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">заказ</a>
+                </li>
+                <li class="nav-item d-none d-lg-block ml-3">
+                    <a class="btn btn-outline-light" href="tel:+375000000000">Позвонить</a>
+                </li>
             </ul>
         </div>
     </div>
 </nav>
 
 
-<section id="#home" style="background-color: #003399; padding: 50px 0; text-white">
+<section id="home" style="background-color: #003399; padding: 50px 0; text-white">
     <div class="d-flex align-items-center justify-content-between"
          style="max-width: 1000000%; margin:  auto; padding: 0 50px;">
         <h1 class="display-3 text-white text-start m-0" style="max-width: 100%;">Мебель по всей Гродненской
@@ -155,5 +185,11 @@
     наши работы
 </h1>
 </id>
+
+<!-- Скрипты для Bootstrap (требуются для работы toggler на малых экранах) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H9gqQ8K/ScQZ6Y3Y9fRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
 </body>
 </html>
