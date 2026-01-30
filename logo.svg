@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" role="img" aria-label="Pashmeb logo">
+  <title>Pashmeb</title>
+  <rect width="100%" height="100%" fill="#3750d6"/>
+  <!-- Handwritten-style text (uses system cursive fallback) -->
+  <text x="18" y="56" font-family="Pacifico, 'Brush Script MT', cursive" font-size="48" fill="#ff8a00" style="font-weight:600">
+    pashmeb
+  </text>
+  <!-- Curved underline -->
+  <path d="M18 72 C75 92, 225 92, 282 72" fill="none" stroke="#ff8a00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.98"/>
+</svg>
+
